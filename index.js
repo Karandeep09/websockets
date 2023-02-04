@@ -1,6 +1,6 @@
 const { Server } = require('ws');
 
-const sockserver = new Server({ port: process.env.PORT });
+const sockserver = new Server({ port: process.env.PORT || 5000});
 const connections = new Set();
 
 const mp = new Map();
